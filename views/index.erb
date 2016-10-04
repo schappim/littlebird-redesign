@@ -1,0 +1,183 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="btn-group pull-right">
+                <ol class="breadcrumb hide-phone p-0 m-0">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li class="active">
+                        Supplier Orders
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row"><h2>Supplier Orders</h2>
+</div>
+
+<div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card-box widget-box-one">
+                            <i class="mdi mdi-chart-areaspline widget-one-icon"></i>
+                            <div class="wigdet-one-content">
+                                <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Statistics">Adafruit</p>
+                                <h2><a href="/s/adafruit"><%= @adafruit.count %></a></h2>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card-box widget-box-one">
+                            <i class="mdi mdi-account-areaspline widget-one-icon"></i>
+                            <div class="wigdet-one-content">
+                                <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User Today">SparkFun</p>
+                                <h2><a href="/s/sparkfun"><%= @sparkfun.count %></a></h2>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card-box widget-box-one">
+                            <i class="mdi mdi-chart-areaspline widget-one-icon"></i>
+                            <div class="wigdet-one-content">
+                                <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="User This Month">Itead</p>
+                                <h2><a href="/s/itead"><%= @itead.count %></a></h2>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card-box widget-box-one">
+                            <i class="mdi mdi-chart-areaspline widget-one-icon"></i>
+                            <div class="wigdet-one-content">
+                                <p class="m-0 text-uppercase font-600 font-secondary text-overflow" title="Request Per Minute">Techbrands</p>
+                                <h2><a href="/s/techbrands"><%= @techbrands.count %></a></h2>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Adafruit Products</h4>
+
+                            <div class="table-responsive">
+                                <table class="table table table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% @adafruit.each do |product| %>
+                                        <tr>
+                                            <td><%= product['sku'] %></td>
+                                            <td><%= product['qty'] %></td>
+                                        </tr>
+                                        <% end %>
+
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- table-responsive -->
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">SparkFun Products</h4>
+
+                            <div class="table-responsive">
+                                <table class="table table table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% @sparkfun.each do |product| %>
+                                        <tr>
+                                            <td><%= product['sku'] %></td>
+                                            <td><%= product['qty'] %></td>
+                                        </tr>
+                                        <% end %>
+
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- table-responsive -->
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Itead Products</h4>
+
+                            <div class="table-responsive">
+                                <table class="table table table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% @itead.each do |product| %>
+                                        <tr>
+                                            <td><%= product['sku'] %></td>
+                                            <td><%= product['qty'] %></td>
+                                        </tr>
+                                        <% end %>
+
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- table-responsive -->
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                            <h4 class="header-title m-t-0 m-b-30">Techbrands Products</h4>
+
+                            <div class="table-responsive">
+                                <table class="table table table-hover m-0">
+                                    <thead>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% @techbrands.each do |product| %>
+                                        <tr>
+                                            <td><%= product['sku'] %></td>
+                                            <td><%= product['qty'] %></td>
+                                        </tr>
+                                        <% end %>
+
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- table-responsive -->
+                        </div> <!-- end card -->
+                    </div>
+                    <!-- end col -->
+                </div>

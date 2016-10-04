@@ -1,0 +1,400 @@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="page-title-box">
+            <h2 class=""><%= @product.title %> <small><%= @product.sku %></small></h2>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="page-title-box">
+            <div class="btn-group pull-right">
+                <ol class="breadcrumb hide-phone p-0 m-0">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Arduino</a>
+                    </li>
+                    <li class="active">
+                        <%= @product.title %>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end page title end breadcrumb -->
+<div class="property-detail-wrapper">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="">
+                <ul class="bxslider property-slider">
+                    <li><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-01c.jpg" /></li>
+                    <li><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-02c.jpg" /></li>
+                    <li><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-04c.jpg" /></li>
+                    <li><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-03c.jpg" /></li>
+                </ul>
+                <div id="bx-pager" class="text-center hide-phone">
+                    <a data-slide-index="0" href=""><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-01c.jpg" height="70" /></a>
+                    <a data-slide-index="1" href=""><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-02c.jpg" height="70" /></a>
+                    <a data-slide-index="2" href=""><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-04c.jpg" height="70" /></a>
+                    <a data-slide-index="3" href=""><img src="https://cdn.sparkfun.com//assets/parts/6/3/4/3/11021-03c.jpg" height="70" /></a>
+
+                </div>
+            </div>
+            <!-- end slider -->
+            <div class="m-t-30">
+                <h4>Description <small><%= @product.sku.gsub('SF-','') %> Australia</small></h4>
+                <p class="m-t-20">
+                    Quisque non dictum eros. Praesent porta vehicula arcu eu ornare. Donec id
+                    egestas arcu. Suspendisse auctor condimentum ligula ultricies cursus.
+                    Vestibulum vel orci vel lacus rhoncus sagittis sed vitae mi. Pellentesque
+                    molestie elit bibendum tincidunt semper. Aliquam ac volutpat risus. In felis
+                    felis, posuere commodo aliquet eget, sagittis sed turpis. Phasellus commodo
+                    turpis non nunc egestas, et egestas felis pretium. Pellentesque dignissim
+                    libero vitae tincidunt semper. Nam id ante nisi. Nam sollicitudin, dolor non
+                    suscipit feugiat, nibh lacus commodo metus, nec tempus dui velit sagittis
+                    velit. Pellentesque elementum risus rhoncus justo porta, at varius odio
+                    consequat. Duis non augue adipiscing, posuere quam non, tempus urna.
+                </p>
+                <h4>Includes</h4>
+                <p>
+                    <ul>
+                        <li>1x SparkFun Proto Pedal PCB (with SMT work completed)</li>
+                        <li>1x Stomp Switch</li>
+                        <li>2x Stereo Audio Jack - ¼"</li>
+                        <li>1x 9 Volt Battery Snap</li>
+                        <li>1x DC Barrel Power Jack/Connector</li>
+                        <li>1x Each 4-40 Nut, Machine Screw, &amp; Star Washer Ground Lug</li>
+                    </ul>
+                </p>
+
+                <h4>Documents</h4>
+                
+                <div class="col-sm-6">
+                                        <ul class="list-unstyled proprerty-features">
+                                            <li>
+                                                <i class="mdi mdi-file-pdf text-success m-r-5"></i>
+                                                <a href="#">Schematic</a>
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-zip-box text-success m-r-5"></i>
+                                                <a href="#">Eagle Files</a>
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-school text-success m-r-5"></i>
+                                                <a href="#">Assembly &amp; Guide</a>
+                                            </li>
+                                            <li>
+                                                <i class=" mdi mdi-school text-success m-r-5"></i>
+                                                <a href="#">Analog Eequalizer Circuit</a>
+                                            </li>
+                                            <li>
+                                                <i class=" mdi mdi-school text-success m-r-5"></i>
+                                                <a href="#">Programmable Digital Pedal Circuit</a>
+                                            </li>
+                                            <li>
+                                                <i class=" mdi mdi-school text-success m-r-5"></i>
+                                                <a href="#">Pedal Chassis Hookup</a>
+                                            </li>
+                                            <li>
+                                                <i class="mdi mdi-github-box text-success m-r-5"></i>
+                                                <a href="#">Github</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+<div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="property-card property-horizontal">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="property-image" style="background: url('assets/images/properties/1.jpg') center center / cover no-repeat;">
+                                        <span class="property-label label label-danger">For Sale</span>
+                                    </div>
+                                </div>
+                                <!-- /col 4 -->
+                                <div class="col-sm-8">
+                                    <div class="property-content">
+                                        <div class="listingInfo">
+                                            <div class="">
+                                                <h4 class="text-success m-t-0">$390,000 - $430,000</h4>
+                                            </div>
+                                            <div class="">
+                                                <h3><a href="#" class="text-dark">4BHK Alexander Court,New York</a></h3>
+                                                <p class="text-muted"><i class="mdi mdi-map-marker-radius m-r-5"></i>245 E 20th St, New York, NY 201609</p>
+
+                                                <p class="font-13 text-muted m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam gravida magna et fringilla convallis. Pellentesque habitant morb</p>
+                                            </div>
+                                        </div>
+                                        <div class="property-action">
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="280 square feet"><i class="mdi mdi-view-grid"></i><span>280</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="4 Bedroom House"><i class="mdi mdi-hotel"></i><span>4</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="2 Parking space"><i class="mdi mdi-car"></i><span>2</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="24h Electricity"><i class="mdi mdi-battery-charging-80"></i><span> 24H</span></a>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-heart-o"></i><span>Save</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- end. Card actions -->
+                                    </div>
+                                </div>
+                                <!-- /col 8 -->
+                            </div>
+                            <!-- /inner row -->
+                        </div>
+                        <!-- End property item -->
+
+
+                        <div class="property-card property-horizontal">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="property-image" style="background: url('assets/images/properties/2.jpg') center center / cover no-repeat;">
+                                        <span class="property-label label label-warning">For Rent</span>
+                                    </div>
+                                </div>
+                                <!-- /col 4 -->
+                                <div class="col-sm-8">
+                                    <div class="property-content">
+                                        <div class="listingInfo">
+                                            <div class="">
+                                                <h4 class="text-success m-t-0">$390,000 - $430,000</h4>
+                                            </div>
+                                            <div class="">
+                                                <h3><a href="#" class="text-dark">4BHK Alexander Court,New York</a></h3>
+                                                <p class="text-muted"><i class="mdi mdi-map-marker-radius m-r-5"></i>245 E 20th St, New York, NY 201609</p>
+
+                                                <p class="font-13 text-muted m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam gravida magna et fringilla convallis. Pellentesque habitant morb</p>
+                                            </div>
+                                        </div>
+                                        <div class="property-action">
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="280 square feet"><i class="mdi mdi-view-grid"></i><span>280</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="4 Bedroom House"><i class="mdi mdi-hotel"></i><span>4</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="2 Parking space"><i class="mdi mdi-car"></i><span>2</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="24h Electricity"><i class="mdi mdi-battery-charging-80"></i><span> 24H</span></a>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-heart-o"></i><span>Save</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- end. Card actions -->
+                                    </div>
+                                </div>
+                                <!-- /col 8 -->
+                            </div>
+                            <!-- /inner row -->
+                        </div>
+                        <!-- End property item -->
+
+
+
+                        <div class="property-card property-horizontal">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="property-image" style="background: url('assets/images/properties/3.jpg') center center / cover no-repeat;">
+                                        <span class="property-label label label-danger">For Sale</span>
+                                    </div>
+                                </div>
+                                <!-- /col 4 -->
+                                <div class="col-sm-8">
+                                    <div class="property-content">
+                                        <div class="listingInfo">
+                                            <div class="">
+                                                <h4 class="text-success m-t-0">$390,000 - $430,000</h4>
+                                            </div>
+                                            <div class="">
+                                                <h3><a href="#" class="text-dark">4BHK Alexander Court,New York</a></h3>
+                                                <p class="text-muted"><i class="mdi mdi-map-marker-radius m-r-5"></i>245 E 20th St, New York, NY 201609</p>
+
+                                                <p class="font-13 text-muted m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam gravida magna et fringilla convallis. Pellentesque habitant morb</p>
+                                            </div>
+                                        </div>
+                                        <div class="property-action">
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="280 square feet"><i class="mdi mdi-view-grid"></i><span>280</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="4 Bedroom House"><i class="mdi mdi-hotel"></i><span>4</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="2 Parking space"><i class="mdi mdi-car"></i><span>2</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="24h Electricity"><i class="mdi mdi-battery-charging-80"></i><span> 24H</span></a>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-heart-o"></i><span>Save</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- end. Card actions -->
+                                    </div>
+                                </div>
+                                <!-- /col 8 -->
+                            </div>
+                            <!-- /inner row -->
+                        </div>
+                        <!-- End property item -->
+
+
+                        <div class="property-card property-horizontal">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="property-image" style="background: url('assets/images/properties/4.jpg') center center / cover no-repeat;">
+                                        <span class="property-label label label-danger">For Sale</span>
+                                    </div>
+                                </div>
+                                <!-- /col 4 -->
+                                <div class="col-sm-8">
+                                    <div class="property-content">
+                                        <div class="listingInfo">
+                                            <div class="">
+                                                <h4 class="text-success m-t-0">$390,000 - $430,000</h4>
+                                            </div>
+                                            <div class="">
+                                                <h3><a href="#" class="text-dark">4BHK Alexander Court,New York</a></h3>
+                                                <p class="text-muted"><i class="mdi mdi-map-marker-radius m-r-5"></i>245 E 20th St, New York, NY 201609</p>
+
+                                                <p class="font-13 text-muted m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam gravida magna et fringilla convallis. Pellentesque habitant morb</p>
+                                            </div>
+                                        </div>
+                                        <div class="property-action">
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="280 square feet"><i class="mdi mdi-view-grid"></i><span>280</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="4 Bedroom House"><i class="mdi mdi-hotel"></i><span>4</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="2 Parking space"><i class="mdi mdi-car"></i><span>2</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="24h Electricity"><i class="mdi mdi-battery-charging-80"></i><span> 24H</span></a>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-heart-o"></i><span>Save</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- end. Card actions -->
+                                    </div>
+                                </div>
+                                <!-- /col 8 -->
+                            </div>
+                            <!-- /inner row -->
+                        </div>
+                        <!-- End property item -->
+
+
+                        <div class="property-card property-horizontal">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="property-image" style="background: url('assets/images/properties/5.jpg') center center / cover no-repeat;">
+                                        <span class="property-label label label-warning">For Rent</span>
+                                    </div>
+                                </div>
+                                <!-- /col 4 -->
+                                <div class="col-sm-8">
+                                    <div class="property-content">
+                                        <div class="listingInfo">
+                                            <div class="">
+                                                <h4 class="text-success m-t-0">$390,000 - $430,000</h4>
+                                            </div>
+                                            <div class="">
+                                                <h3><a href="#" class="text-dark">4BHK Alexander Court,New York</a></h3>
+                                                <p class="text-muted"><i class="mdi mdi-map-marker-radius m-r-5"></i>245 E 20th St, New York, NY 201609</p>
+
+                                                <p class="font-13 text-muted m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit Aliquam gravida magna et fringilla convallis. Pellentesque habitant morb</p>
+                                            </div>
+                                        </div>
+                                        <div class="property-action">
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="280 square feet"><i class="mdi mdi-view-grid"></i><span>280</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="4 Bedroom House"><i class="mdi mdi-hotel"></i><span>4</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="2 Parking space"><i class="mdi mdi-car"></i><span>2</span></a>
+                                            <a href="#" target="new_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="24h Electricity"><i class="mdi mdi-battery-charging-80"></i><span> 24H</span></a>
+                                            <div class="pull-right">
+                                                <a href="#" class="btn btn-default"><i class="fa fa-heart-o"></i><span>Save</span></a>
+                                            </div>
+                                        </div>
+                                        <!-- end. Card actions -->
+                                    </div>
+                                </div>
+                                <!-- /col 8 -->
+                            </div>
+                            <!-- /inner row -->
+                        </div>
+                        <!-- End property item -->
+
+                        <div class="text-right">
+                            <ul class="pagination pagination-split">
+                                <li class="disabled">
+                                    <a href="#"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                
+                </div> <!-- end m-t-30 -->
+                </div> <!-- end col -->
+                <div class="col-md-4">
+                    <div class="text-center card-box">
+                        <div class="text-left">
+                            <h2 class="header-title m-t-0 m-b-20">$43.00 AUD<br><small class="text-success">In Stock</small></h2>
+                        </div>
+                        <div class="text-left">
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1">Quantity</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" style="width:30%;" value="1">
+                            </div>
+                        </div>
+                        <div class="member-card">
+                            
+                            <button type="button" class="btn btn-block btn-lg btn-primary waves-effect waves-light">BUY IT NOW</button>
+                            <button type="button" class="btn btn-block btn-lg btn-success waves-effect waves-light">ADD TO CART</button>
+                            </div> <!-- end membar card -->
+                            <div  style="margin-top:20px;">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered m-b-0">
+                                        <tbody class="text-left">
+                                            <tr>
+                                                <th scope="row">Supplier:</th>
+                                                <td><strong><a href="#">Arduino Australia</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Price:</th>
+                                                <td><strong>$43.00 AUD</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">MPN:</th>
+                                                <td><%= @product.sku.gsub('SF-','')%></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">SKU:</th>
+                                                <td><%= @product.sku %></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">We can dispatch today: </th>
+                                                <td class="text-success">100 Units</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">We can dispatch in 7 days:</th>
+                                                <td class="text-warning">2023 Units</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="text-center" style="margin-top:20px;"">
+                                    <button class="btn btn-default waves-effect waves-light m-b-5"> <i class="mdi mdi-truck m-r-5"></i> <span>Shipping Information</span> </button>
+                                </div>
+                            </div>
+                            </div> <!-- end card-box -->
+                            <!-- end card-box -->
+                            </div> <!-- end col -->
+                            </div> <!-- end row -->
+                        </div>
+                        <!-- end property-detail-wrapper -->

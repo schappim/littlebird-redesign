@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <div class="btn-group pull-right">
+                <ol class="breadcrumb hide-phone p-0 m-0">
+                    <li>
+                        <a href="/">Supplier Orders</a>
+                    </li>
+                    <li class="active">
+                        <%= @title %>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row"><h2><%= @title %></h2>
+</div>
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card-box">
+            <h4 class="header-title m-t-0 m-b-30">Adafruit Products</h4>
+            <div style="text-align:right; padding-bottom:20px;">
+                <button class="btn btn-primary waves-effect waves-light m-b-5"> <span>Add to Supplier Cart</span> <i class="glyphicon glyphicon-shopping-cart m-l-5"></i> </button>
+                <button class="btn btn-danger waves-effect waves-light m-b-5"> <span>Clear Order</span> <i class="glyphicon glyphicon-remove m-l-5 m-l-5"></i> </button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table table-hover m-0">
+                    <thead>
+                        <tr>
+                            <th>SKU</th>
+                            <th>Qty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @products.each do |product| %>
+                        <tr>
+                            <td><%= product['sku'] %></td>
+                            <td><%= product['qty'] %></td>
+                            <td id="status"></td>
+                        </tr>
+                        <% end %>
+                    </tbody>
+                </table>
+            </div> <!-- table-responsive -->
+        </div> <!-- end card -->
+    </div>
+            <!-- end col -->
+</div>
